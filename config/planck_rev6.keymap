@@ -14,6 +14,29 @@
 //};
 
 / {
+    macros {
+        ctrlpf: ctrlpf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(P) &kp F>;
+            label = "CTRLPF";
+        };
+
+        ctrlpw: ctrlpw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(P) &kp W>;
+            label = "CTRLPW";
+        };
+
+        ctrlpx: ctrlpx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(P) &kp X>;
+            label = "CTRLPX";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -45,8 +68,8 @@
 
         raise {
             bindings = <
-&kp GRAVE   &kp N1       &kp N2      &kp N3     &kp N4     &kp N5  &trans          &kp N7          &kp N8        &kp N9        &kp N0        &kp BSPC
-&kp DEL     &kp LC(F1)   &kp LC(F2)  &kp F3     &kp F4     &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
+&kp GRAVE   &kp N1       &kp F2      &kp N3     &kp N4     &kp N5  &trans          &kp N7          &kp N8        &kp N9        &kp N0        &kp BSPC
+&kp DEL     &kp LC(F1)   &kp LC(F2)  &kp F3     &kp F4     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
 &trans      &kp LC(Z)    &kp LC(X)   &kp LC(C)  &kp LC(V)  &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END       &trans        &trans
 &sys_reset  &bootloader  &trans      &trans     &trans     &trans  &trans          &trans          &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
@@ -63,10 +86,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(LEFT)        &kp LA(UP_ARROW)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &ctrlpx             &ctrlpw           &ctrlpf       &kp LA(N)      &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans              &trans            &trans        &trans         &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
