@@ -48,10 +48,10 @@
             // |       | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | DARW | UARW  |  RARW |
 
             bindings = <
-&mt LEFT_ALT TAB                 &kp Q     &kp W     &kp E     &kp R      &kp T        &kp Y        &kp U         &kp I      &kp O     &kp P      &kp BACKSLASH
-&mt LEFT_CONTROL BACKSPACE       &kp A     &kp S     &kp D     &kp F      &kp G        &kp H        &kp J         &kp K      &kp L     &kp SEMI   &kp SQT
-&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z     &kp X     &kp C     &kp V      &kp B        &kp N        &kp M         &kp COMMA  &kp DOT   &kp SLASH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS
-&trans                           &kp LCTL  &kp LALT  &kp LGUI  &lt 4 TAB  &lt 2 SPACE  &lt 1 ENTER  &lt 3 ESCAPE  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+&mt LEFT_ALT TAB                 &kp Q     &kp W     &kp E     &kp R        &kp T      &kp Y         &kp U        &kp I      &kp O     &kp P      &kp BACKSLASH
+&mt LEFT_CONTROL BACKSPACE       &kp A     &kp S     &kp D     &kp F        &kp G      &kp H         &kp J        &kp K      &kp L     &kp SEMI   &kp SQT
+&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z     &kp X     &kp C     &kp V        &kp B      &kp N         &kp M        &kp COMMA  &kp DOT   &kp SLASH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS
+&trans                           &kp LCTL  &kp LALT  &kp LGUI  &lt 2 SPACE  &lt 4 TAB  &lt 3 ESCAPE  &lt 1 ENTER  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -68,10 +68,10 @@
 
         raise {
             bindings = <
-&kp GRAVE   &kp N1       &kp F2      &kp N3     &kp N4     &kp N5  &trans          &kp N7          &kp N8        &kp N9        &kp N0        &kp BSPC
-&kp DEL     &kp LC(F1)   &kp LC(F2)  &kp F3     &kp F4     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
-&trans      &kp LC(Z)    &kp LC(X)   &kp LC(C)  &kp LC(V)  &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END       &trans        &trans
-&sys_reset  &bootloader  &trans      &trans     &trans     &trans  &trans          &trans          &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
+&kp LEFT_META  &kp N1       &kp F2     &kp N3     &kp N4     &kp N5  &trans          &kp N7          &kp N8        &kp N9        &kp N0        &kp BSPC
+&kp DEL        &kp LC(A)    &kp LC(S)  &trans     &trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
+&trans         &kp LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END       &trans        &trans
+&sys_reset     &bootloader  &trans     &trans     &trans     &trans  &trans          &trans          &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
         };
 
