@@ -56,10 +56,10 @@
             // |       | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | DARW | UARW  |  RARW |
 
             bindings = <
-&mt LEFT_ALT TAB                 &kp Q     &kp W     &kp E     &kp R      &kp T        &kp Y        &kp U         &kp I      &kp O     &kp P      &kp BACKSLASH
-&mt LEFT_CONTROL BACKSPACE       &kp A     &kp S     &kp D     &kp F      &kp G        &kp H        &kp J         &kp K      &kp L     &kp SEMI   &kp SQT
-&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z     &kp X     &kp C     &kp V      &kp B        &kp N        &kp M         &kp COMMA  &kp DOT   &kp SLASH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS
-&trans                           &kp LCTL  &kp LALT  &kp LGUI  &lt 4 TAB  &lt 2 SPACE  &lt 1 ENTER  &lt 3 ESCAPE  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+&kp GRAVE       &kp Q           &kp W     &kp E     &kp R               &kp T        &kp Y        &kp U         &kp I      &kp O     &kp P      &kp BACKSLASH
+&kp BACKSPACE   &kp A           &kp S     &kp D     &kp F               &kp G        &kp H        &kp J         &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &mt LEFT_ALT Z  &kp X     &kp C     &mt LEFT_CONTROL V  &kp B        &kp N        &kp M         &kp COMMA  &kp DOT   &kp SLASH  &kp RIGHT_SHIFT
+&trans          &kp LCTL        &kp LALT  &kp LGUI  &lt 4 TAB           &lt 2 SPACE  &lt 1 ENTER  &lt 3 ESCAPE  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -67,10 +67,10 @@
 
         lower {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE        &kp GRAVE      &kp N7        &kp N8        &kp N9        &kp ASTERISK   &kp DEL
-&kp DEL     &kp HASH         &kp DOLLAR   &kp EQUAL         &kp MINUS          &kp UNDERSCORE  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS       &kp PIPE
-&kp COMMA   &kp PERCENT      &kp CARET    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE       &kp AMPERSAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp PERIOD
-&trans      &trans           &trans       &trans            &trans             &trans          &trans         &trans        &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP   &kp C_PP
+&kp EXCLAMATION  &kp LEFT_BRACE    &kp RIGHT_BRACE    &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp UNDERSCORE         &kp CARET     &kp GRAVE      &kp N7        &kp N8        &kp N9        &kp AT_SIGN   &kp DEL
+&kp HASH         &kp LESS_THAN     &kp GREATER_THAN   &kp ASTERISK                    &kp MINUS              &kp QUESTION  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON     &kp PIPE
+&kp DOLLAR       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS  &kp TILDE     &kp AMPERSAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT   &kp PLUS
+&trans           &trans            &trans             &trans                          &trans                 &trans        &trans         &trans        &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
         };
 
